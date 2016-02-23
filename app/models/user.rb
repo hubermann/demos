@@ -22,10 +22,3 @@ class User < ActiveRecord::Base
 
 
 end
-
-
-has_secure_password
-has_secure_password
-has_secure_password
-has_secure_password
-has_secure_password
