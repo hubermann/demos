@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
 
   # Api definition
-  namespace :api, defaults: { format: :json },  constraints: { subdomain: 'api' }, path: '/'  do
+#namespace :api, path: nil, constraints: { subdomain: 'api' }, path: '/'  do
     # We are going to list our resources here
-  end
+    resources :users
+  #end
 
 
   # The priority is based upon order of creation: first created -> highest priority.

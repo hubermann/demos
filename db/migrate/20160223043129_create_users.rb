@@ -1,10 +1,15 @@
 class CreateUsers < ActiveRecord::Migration
+
   def change
     create_table :users do |t|
-    	t.string    :login,               :null => false             
-			t.string    :email,               :null => false               
-			t.string    :encrypted_password,  :null => false                
-			t.string    :password_salt,       :null => false                
+      t.string :first_name
+      t.string :last_name
+      t.string :email
+      t.string :encrypted_password
+      t.string :salt
+
+
+
 			t.string    :persistence_token,   :null => false                
 			t.string    :single_access_token, :null => false                
 			t.string    :perishable_token,    :null => false                
